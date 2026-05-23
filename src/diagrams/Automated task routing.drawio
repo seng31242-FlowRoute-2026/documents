@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HGTgjoRsIUsDZtXMbMs6">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-7" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3jQuWIx22SN4QWUrwPoL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Detect newly uploaded video task in intake queue" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-8" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3jQuWIx22SN4QWUrwPoL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Query database for active task count of all 8 Editing Pods" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-38" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Calculate capacity of each pod (active tasks vs. pod size)" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-16" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-39" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Are all 8 pods at maximum capacity?" vertex="1">
+          <mxGeometry height="140" width="140" x="210" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-45" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Flag video task as &quot;Queued" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-51" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-49" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Send high-priority capacity alert to Product Owner" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-61" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Identify pod(s) with the lowest active workload" vertex="1">
+          <mxGeometry height="60" width="120" x="427.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-44" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="3jQuWIx22SN4QWUrwPoL-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-58" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-56" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Is there a tie for lowest workload?" vertex="1">
+          <mxGeometry height="135" width="135" x="420" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-32" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Check historical completion time of tied pods" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="477.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-59" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-56" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Select pod with the fastest recent turnaround time" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="627.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-28" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Assign video task to the selected/identified Editing Pod" vertex="1">
+          <mxGeometry height="60" width="120" x="427.5" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-29" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Update Pod Workload Dashboard in real-time" vertex="1">
+          <mxGeometry height="60" width="120" x="427.5" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-53" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-52" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dispatch internal alert (Slack/Email) to assigned Editing Pod" vertex="1">
+          <mxGeometry height="60" width="120" x="427.5" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="269" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="546" y="480.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="347.5" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="474" y="581.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-46" parent="1" style="ellipse;html=1;shape=startState;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="45" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-47" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-46" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3jQuWIx22SN4QWUrwPoL-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-49" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="590" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-52" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="452.5" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-60" edge="1" parent="1" source="3jQuWIx22SN4QWUrwPoL-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3jQuWIx22SN4QWUrwPoL-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3jQuWIx22SN4QWUrwPoL-56" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="447.5" y="617.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
