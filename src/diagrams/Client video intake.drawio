@@ -1,0 +1,167 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="UC01-ClientVideoIntake">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- START node -->
+        <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="365" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 1: Client opens portal and clicks Upload -->
+        <mxCell id="s1" value="Client opens portal &amp; clicks Upload" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="110" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 2: Client selects video file -->
+        <mxCell id="s2" value="Client selects video file" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="200" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: System validates file format and size -->
+        <mxCell id="d1" value="System validates file&#xa;format &amp; size?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="255" y="290" width="250" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Alt Flow 1a: System shows error message -->
+        <mxCell id="af1a" value="System shows error message" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="570" y="295" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Alt Flow 1b: Client fixes file -->
+        <mxCell id="af1b" value="Client fixes file&#xa;(resize / reformat)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="570" y="385" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 4: Client attaches brief document -->
+        <mxCell id="s4" value="Client attaches brief document" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="420" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 5: Client clicks Submit -->
+        <mxCell id="s5" value="Client clicks Submit" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="510" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: Cancelled? -->
+        <mxCell id="d2" value="Cancelled?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Alt Flow 2: Discard files, return to home -->
+        <mxCell id="af2" value="Discard files, return to home" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="610" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Cancel End node -->
+        <mxCell id="end2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;double=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="700" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Step 6: System stores video file and brief -->
+        <mxCell id="s6" value="System stores video file &amp; brief" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="720" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 7: System triggers FlowRoute pipeline -->
+        <mxCell id="s7" value="System triggers FlowRoute pipeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="810" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 8: System shows confirmation to client -->
+        <mxCell id="s8" value="System shows confirmation to client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="900" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- END node -->
+        <mxCell id="end1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;double=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="990" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ── EDGES ── -->
+        <!-- start → s1 -->
+        <mxCell id="e1" edge="1" source="start" target="s1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s1 → s2 -->
+        <mxCell id="e2" edge="1" source="s1" target="s2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s2 → d1 -->
+        <mxCell id="e3" edge="1" source="s2" target="d1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- d1 → af1a [No / invalid] -->
+        <mxCell id="e4" edge="1" source="d1" target="af1a" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="No (invalid)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- af1a → af1b -->
+        <mxCell id="e5" edge="1" source="af1a" target="af1b" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- af1b → s2 (retry loop) -->
+        <mxCell id="e6" edge="1" source="af1b" target="s2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" value="retry">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="410" />
+              <mxPoint x="800" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- d1 → s4 [Yes / valid] -->
+        <mxCell id="e7" edge="1" source="d1" target="s4" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="Yes (valid)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s4 → s5 -->
+        <mxCell id="e8" edge="1" source="s4" target="s5" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s5 → d2 -->
+        <mxCell id="e9" edge="1" source="s5" target="d2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- d2 → af2 [Yes / cancelled] -->
+        <mxCell id="e10" edge="1" source="d2" target="af2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- af2 → end2 -->
+        <mxCell id="e11" edge="1" source="af2" target="end2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- d2 → s6 [No / proceed] -->
+        <mxCell id="e12" edge="1" source="d2" target="s6" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s6 → s7 -->
+        <mxCell id="e13" edge="1" source="s6" target="s7" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s7 → s8 -->
+        <mxCell id="e14" edge="1" source="s7" target="s8" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- s8 → end1 -->
+        <mxCell id="e15" edge="1" source="s8" target="end1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
