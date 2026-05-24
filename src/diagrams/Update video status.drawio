@@ -5,86 +5,107 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
+        <!-- START STATE -->
         <mxCell id="start" parent="1" style="ellipse;html=1;shape=startState;" value="" vertex="1">
           <mxGeometry height="70" width="70" x="45" y="40" as="geometry" />
         </mxCell>
 
+        <!-- Step 1: Pod completes processing stage -->
         <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod completes current processing stage on assigned video task" vertex="1">
           <mxGeometry height="60" width="120" x="20" y="150" as="geometry" />
         </mxCell>
 
+        <!-- Step 2: Pod sends In Progress update -->
         <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod sends status update request → &quot;In Progress&quot;" vertex="1">
           <mxGeometry height="60" width="120" x="20" y="250" as="geometry" />
         </mxCell>
 
+        <!-- Decision: System validates pod identity and task -->
         <mxCell id="d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="System validates pod identity &amp; task assignment?" vertex="1">
           <mxGeometry height="140" width="140" x="210" y="210" as="geometry" />
         </mxCell>
 
+        <!-- Alt Flow 1a: Reject request - auth error -->
         <mxCell id="af1a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System rejects request, returns authentication error" vertex="1">
           <mxGeometry height="60" width="120" x="220" y="80" as="geometry" />
         </mxCell>
 
-        <mxCell id="af1b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod Notified, No Status Change Recorded" vertex="1">
+        <!-- Alt Flow 1b: Pod notified, no status change -->
+        <mxCell id="af1b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod notified, no status change recorded" vertex="1">
           <mxGeometry height="60" width="120" x="400" y="80" as="geometry" />
         </mxCell>
 
+        <!-- Alt Flow 1 END STATE -->
         <mxCell id="end2" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
           <mxGeometry height="70" width="70" x="590" y="75" as="geometry" />
         </mxCell>
 
+        <!-- Step 4: System records In Progress + timestamp -->
         <mxCell id="s4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System records status &quot;In Progress&quot; + timestamps the change" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="210" as="geometry" />
         </mxCell>
 
+        <!-- Step 5: Pod sends Review update -->
         <mxCell id="s5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod finishes processing, sends status update → &quot;Review&quot;" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="310" as="geometry" />
         </mxCell>
 
+        <!-- Decision: System available / request succeeds? -->
         <mxCell id="d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="System available &amp; request succeeds?" vertex="1">
           <mxGeometry height="140" width="140" x="210" y="370" as="geometry" />
         </mxCell>
 
+        <!-- Alt Flow 2a: Pod retries -->
         <mxCell id="af2a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod retries request up to 3 times (5-second interval)" vertex="1">
           <mxGeometry height="60" width="120" x="20" y="390" as="geometry" />
         </mxCell>
 
+        <!-- Decision: All retries failed? -->
         <mxCell id="d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="All retries failed?" vertex="1">
           <mxGeometry height="100" width="120" x="20" y="490" as="geometry" />
         </mxCell>
 
+        <!-- Alt Flow 2b: Log error, alert admin -->
         <mxCell id="af2b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod logs error locally, alerts system administrator" vertex="1">
           <mxGeometry height="60" width="120" x="20" y="630" as="geometry" />
         </mxCell>
 
+        <!-- Alt Flow 2 END STATE -->
         <mxCell id="end3" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
           <mxGeometry height="70" width="70" x="35" y="730" as="geometry" />
         </mxCell>
 
+        <!-- Step 6: System records Review + timestamp -->
         <mxCell id="s6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System records status &quot;Review&quot; + timestamps the change" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="420" as="geometry" />
         </mxCell>
 
+        <!-- Step 7: Reviewer approves -->
         <mxCell id="s7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Reviewer approves completed video output" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="520" as="geometry" />
         </mxCell>
 
+        <!-- Step 8: Pod sends Completed update -->
         <mxCell id="s8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pod sends final status update → &quot;Completed&quot;" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="620" as="geometry" />
         </mxCell>
 
+        <!-- Step 9: System records Completed, decrements count -->
         <mxCell id="s9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System records &quot;Completed&quot;, decrements pod active task count by 1, updates workload capacity" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="720" as="geometry" />
         </mxCell>
 
+        <!-- Step 10: System confirms to pod -->
         <mxCell id="s10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System confirms status update to the pod" vertex="1">
           <mxGeometry height="60" width="120" x="427" y="820" as="geometry" />
         </mxCell>
 
+        <!-- MAIN END STATE -->
         <mxCell id="end1" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
           <mxGeometry height="70" width="70" x="452" y="920" as="geometry" />
         </mxCell>
 
+        <!-- ── LABELS ── -->
         <mxCell id="lbl-no1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No (invalid)" vertex="1">
           <mxGeometry height="30" width="80" x="195" y="168" as="geometry" />
         </mxCell>
@@ -104,50 +125,64 @@
           <mxGeometry height="30" width="80" x="148" y="528" as="geometry" />
         </mxCell>
 
+        <!-- ── EDGES ── -->
+
+        <!-- start → s1 -->
         <mxCell id="e1" edge="1" source="start" target="s1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s1 → s2 -->
         <mxCell id="e2" edge="1" source="s1" target="s2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s2 → d1 -->
         <mxCell id="e3" edge="1" source="s2" target="d1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- d1 → af1a [No / invalid] -->
         <mxCell id="e4" edge="1" source="d1" target="af1a" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- af1a → af1b -->
         <mxCell id="e5" edge="1" source="af1a" target="af1b" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- af1b → end2 -->
         <mxCell id="e6" edge="1" source="af1b" target="end2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- d1 → s4 [Yes / valid] -->
         <mxCell id="e7" edge="1" source="d1" target="s4" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s4 → s5 -->
         <mxCell id="e8" edge="1" source="s4" target="s5" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s5 → d2 -->
         <mxCell id="e9" edge="1" source="s5" target="d2" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- d2 → af2a [No / timeout] -->
         <mxCell id="e10" edge="1" source="d2" target="af2a" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- af2a → d3 -->
         <mxCell id="e11" edge="1" source="af2a" target="d3" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- d3 → s5 [No / retry loop] -->
         <mxCell id="e12" edge="1" source="d3" target="s5" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -158,34 +193,42 @@
           </mxGeometry>
         </mxCell>
 
+        <!-- d3 → af2b [Yes / all failed] -->
         <mxCell id="e13" edge="1" source="d3" target="af2b" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- af2b → end3 -->
         <mxCell id="e14" edge="1" source="af2b" target="end3" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- d2 → s6 [Yes / success] -->
         <mxCell id="e15" edge="1" source="d2" target="s6" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s6 → s7 -->
         <mxCell id="e16" edge="1" source="s6" target="s7" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s7 → s8 -->
         <mxCell id="e17" edge="1" source="s7" target="s8" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s8 → s9 -->
         <mxCell id="e18" edge="1" source="s8" target="s9" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s9 → s10 -->
         <mxCell id="e19" edge="1" source="s9" target="s10" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
+        <!-- s10 → end1 -->
         <mxCell id="e20" edge="1" source="s10" target="end1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
