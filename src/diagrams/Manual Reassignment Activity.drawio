@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="3Vh5uk21Vnj7wyvT0s4h">
+    <mxGraphModel dx="624" dy="341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-37" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-1" parent="1" style="ellipse;html=1;shape=startState;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="160" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-36" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Product Owner logs into Admin Dashboard" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-38" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Select queued video task from the bottleneck alert list" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-19" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Select target alternative Editing Pod" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-3" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pdcdJ1e4p5sN5ExvJ7gI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Click &#39;Force Reassign&#39; button" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-35" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bypass capacity validation and update database task record" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-30" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Broadcast high-priority push notification to selected Editing Pod" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-31" edge="1" parent="1" source="4arjKX1b_pXoqPBBx9sW-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="4arjKX1b_pXoqPBBx9sW-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;code data-path-to-node=&quot;9,10,0&quot; data-index-in-node=&quot;29&quot;&gt;Update Pod Workload Dashboard in real-time&lt;/code&gt;" vertex="1">
+          <mxGeometry height="50" width="170" x="105" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="4arjKX1b_pXoqPBBx9sW-25" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="160" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-4" edge="1" parent="1" source="pdcdJ1e4p5sN5ExvJ7gI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4arjKX1b_pXoqPBBx9sW-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-5" edge="1" parent="1" source="pdcdJ1e4p5sN5ExvJ7gI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pdcdJ1e4p5sN5ExvJ7gI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-1" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Did Target Pod Accept Assignment?" vertex="1">
+          <mxGeometry height="160" width="160" x="110" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-12" edge="1" parent="1" source="pdcdJ1e4p5sN5ExvJ7gI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pdcdJ1e4p5sN5ExvJ7gI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Display Error Message: &#39;Assignment Rejected&#39;" vertex="1">
+          <mxGeometry height="50" width="170" x="350" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="276" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="144" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="pdcdJ1e4p5sN5ExvJ7gI-10" parent="1" style="ellipse;html=1;shape=endState;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="590" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
