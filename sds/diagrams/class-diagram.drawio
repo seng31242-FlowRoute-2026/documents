@@ -1,0 +1,174 @@
+<mxGraphModel dx="1373" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="CUM13pbQA_io14IsIX33-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RoutingEngine" vertex="1">
+      <mxGeometry height="188" width="250" x="60" y="180" as="geometry">
+        <mxRectangle height="30" width="120" x="240" y="230" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-2" parent="CUM13pbQA_io14IsIX33-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- masterQueue: List&amp;lt;VideoTask&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- routingStrategy: String&lt;/div&gt;" vertex="1">
+      <mxGeometry height="74" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-3" parent="CUM13pbQA_io14IsIX33-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-4" parent="CUM13pbQA_io14IsIX33-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ calculatePodCapacities(): void&lt;div&gt;&lt;div&gt;+ identifyLeastBusyPod(): EditingPod&lt;/div&gt;&lt;div&gt;+ routeTask(task: VideoTask): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="250" y="108" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" EditingPod" vertex="1">
+      <mxGeometry height="188" width="250" x="450" y="190" as="geometry">
+        <mxRectangle height="30" width="120" x="440" y="150" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-7" parent="CUM13pbQA_io14IsIX33-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- podId: UUID&lt;div&gt;- podName: String&lt;/div&gt;&lt;div&gt;- maxCapacity: int&lt;/div&gt;&lt;div&gt;- activeTaskCount: int&lt;/div&gt;" vertex="1">
+      <mxGeometry height="74" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-8" parent="CUM13pbQA_io14IsIX33-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-9" parent="CUM13pbQA_io14IsIX33-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ assignEditor(user: User): boolean&lt;div&gt;+ incrementTaskCount(): void&lt;/div&gt;&lt;div&gt;+ isAtMaximumCapacity(): boolean&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="250" y="108" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" VideoTask " vertex="1">
+      <mxGeometry height="188" width="250" x="850" y="160" as="geometry">
+        <mxRectangle height="30" width="120" x="840" y="160" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-11" parent="CUM13pbQA_io14IsIX33-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- taskId: UUID&lt;div&gt;- title: String&lt;/div&gt;&lt;div&gt;- status: String&lt;/div&gt;&lt;div&gt;- fileSize: int&lt;/div&gt;&lt;div&gt;- duration: float&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+      <mxGeometry height="74" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-12" parent="CUM13pbQA_io14IsIX33-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-13" parent="CUM13pbQA_io14IsIX33-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ updateStatus(newStatus: String): void&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ assignToPod(podId: UUID): void&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="250" y="108" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" User " vertex="1">
+      <mxGeometry height="170" width="250" x="450" y="430" as="geometry">
+        <mxRectangle height="30" width="120" x="440" y="430" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-15" parent="CUM13pbQA_io14IsIX33-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;- userId: UUID&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- name: String&lt;/div&gt;&lt;div&gt;- role: String&lt;/div&gt;&lt;div&gt;- email: String&lt;/div&gt;&lt;div&gt;- passwordHash: String&lt;/div&gt;" vertex="1">
+      <mxGeometry height="74" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-16" parent="CUM13pbQA_io14IsIX33-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-17" parent="CUM13pbQA_io14IsIX33-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ login(): boolean&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ logout(): void&lt;/div&gt;" vertex="1">
+      <mxGeometry height="62" width="250" y="108" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-18" edge="1" parent="1" source="CUM13pbQA_io14IsIX33-4" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1;exitY=-0.031;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.965;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-7" value="">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="330" y="240" as="sourcePoint" />
+        <mxPoint x="440" y="240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-21" edge="1" parent="1" source="CUM13pbQA_io14IsIX33-13" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.996;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;" target="CUM13pbQA_io14IsIX33-9" value="">
+      <mxGeometry relative="1" x="-0.7328" y="-11" as="geometry">
+        <mxPoint as="offset" />
+        <mxPoint x="830" y="250" as="sourcePoint" />
+        <mxPoint x="990" y="250" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-23" connectable="0" parent="CUM13pbQA_io14IsIX33-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+      <mxGeometry relative="1" x="0.7533" y="2" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-24" connectable="0" parent="CUM13pbQA_io14IsIX33-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;*&lt;/font&gt;" vertex="1">
+      <mxGeometry relative="1" x="-0.6669" y="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-33" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.357;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.01;entryY=0.908;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-9" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="389.98" y="690" as="sourcePoint" />
+        <mxPoint x="580" y="640" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-34" connectable="0" parent="CUM13pbQA_io14IsIX33-33" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" value="1" vertex="1">
+      <mxGeometry relative="1" x="-1" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-35" connectable="0" parent="CUM13pbQA_io14IsIX33-33" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;" value="1..*" vertex="1">
+      <mxGeometry relative="1" x="1" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-36" connectable="0" parent="CUM13pbQA_io14IsIX33-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="manages" vertex="1">
+      <mxGeometry relative="1" x="-0.2297" y="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-37" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" ProductOwner " vertex="1">
+      <mxGeometry height="150" width="250" x="280" y="690" as="geometry">
+        <mxRectangle height="30" width="120" x="440" y="430" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-52" edge="1" parent="CUM13pbQA_io14IsIX33-37" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.104;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-17" value="Extends">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="130" as="sourcePoint" />
+        <mxPoint x="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-38" parent="CUM13pbQA_io14IsIX33-37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- managedClients: List&amp;lt;UUID&amp;gt;" vertex="1">
+      <mxGeometry height="44" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-39" parent="CUM13pbQA_io14IsIX33-37" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="70" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-40" parent="CUM13pbQA_io14IsIX33-37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ reassignTask(taskId: UUID, newPodId: UUID): boolean&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ viewDashboardMetrics(): DashboardData&lt;/div&gt;" vertex="1">
+      <mxGeometry height="72" width="250" y="78" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-41" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" Editor " vertex="1">
+      <mxGeometry height="150" width="250" x="570" y="690" as="geometry">
+        <mxRectangle height="30" width="120" x="440" y="430" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-55" edge="1" parent="CUM13pbQA_io14IsIX33-41" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" value="Extends">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="90" as="sourcePoint" />
+        <mxPoint x="90" y="-94" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-54" edge="1" parent="CUM13pbQA_io14IsIX33-41" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.996;entryY=0.822;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-9" value="">
+      <mxGeometry relative="1" x="-1" y="3" as="geometry">
+        <mxPoint x="180" as="sourcePoint" />
+        <mxPoint x="340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-42" parent="CUM13pbQA_io14IsIX33-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- specialization: String&lt;div&gt;- currentStatus: String&lt;/div&gt;" vertex="1">
+      <mxGeometry height="44" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-43" parent="CUM13pbQA_io14IsIX33-41" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="70" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-44" parent="CUM13pbQA_io14IsIX33-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ acceptTask(taskId: UUID): boolean&lt;div&gt;&lt;br&gt;&lt;div&gt;+ updateTaskProgress(taskId: UUID, status: String): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+      <mxGeometry height="72" width="250" y="78" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-45" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" Client" vertex="1">
+      <mxGeometry height="150" width="250" x="850" y="690" as="geometry">
+        <mxRectangle height="30" width="120" x="440" y="430" as="alternateBounds" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-50" edge="1" parent="CUM13pbQA_io14IsIX33-45" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" value="">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="120" as="sourcePoint" />
+        <mxPoint x="120" y="-340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-57" edge="1" parent="CUM13pbQA_io14IsIX33-45" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="CUM13pbQA_io14IsIX33-17" value="Extends">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="70" as="sourcePoint" />
+        <mxPoint x="230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-46" parent="CUM13pbQA_io14IsIX33-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- companyName: String&lt;div&gt;- billingPlan: String&lt;/div&gt;" vertex="1">
+      <mxGeometry height="44" width="250" y="26" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-47" parent="CUM13pbQA_io14IsIX33-45" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+      <mxGeometry height="8" width="250" y="70" as="geometry" />
+    </mxCell>
+    <mxCell id="CUM13pbQA_io14IsIX33-48" parent="CUM13pbQA_io14IsIX33-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ uploadVideo(file: File): VideoTask&lt;div&gt;+ cancelTask(taskId: UUID): boolean&lt;/div&gt;&lt;div&gt;+ viewTaskStatus(taskId: UUID): String&lt;/div&gt;" vertex="1">
+      <mxGeometry height="72" width="250" y="78" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
