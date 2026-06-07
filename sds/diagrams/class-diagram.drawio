@@ -1,4 +1,4 @@
-\<mxGraphModel dx="1471" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxGraphModel dx="1873" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
   <root>
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
@@ -164,7 +164,7 @@
     <mxCell id="CUM13pbQA_io14IsIX33-48" parent="CUM13pbQA_io14IsIX33-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ uploadVideo(file: File): VideoTask&lt;div&gt;+ cancelTask(taskId: UUID): boolean&lt;/div&gt;&lt;div&gt;+ viewTaskStatus(taskId: UUID): String&lt;/div&gt;" vertex="1">
       <mxGeometry height="72" width="250" y="78" as="geometry" />
     </mxCell>
-    <mxCell id="KJdSYOux9JOcUkHazmsh-2" edge="1" parent="1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.006;entryY=0.774;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-7" value="">
+    <mxCell id="KJdSYOux9JOcUkHazmsh-2" edge="1" parent="1" style="endArrow=open;endSize=16;endFill=0;html=1;rounded=0;entryX=0.006;entryY=0.774;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-7" value="">
       <mxGeometry relative="1" width="160" as="geometry">
         <mxPoint x="310" y="273" as="sourcePoint" />
         <mxPoint x="406" y="200" as="targetPoint" />
