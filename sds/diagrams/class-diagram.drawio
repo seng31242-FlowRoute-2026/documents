@@ -1,4 +1,4 @@
-<mxGraphModel dx="1373" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+\<mxGraphModel dx="1471" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
   <root>
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
@@ -17,25 +17,25 @@
       <mxGeometry height="80" width="250" y="108" as="geometry" />
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" EditingPod" vertex="1">
-      <mxGeometry height="188" width="250" x="450" y="190" as="geometry">
+      <mxGeometry height="200" width="250" x="450" y="190" as="geometry">
         <mxRectangle height="30" width="120" x="440" y="150" as="alternateBounds" />
       </mxGeometry>
     </mxCell>
-    <mxCell id="CUM13pbQA_io14IsIX33-7" parent="CUM13pbQA_io14IsIX33-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- podId: UUID&lt;div&gt;- podName: String&lt;/div&gt;&lt;div&gt;- maxCapacity: int&lt;/div&gt;&lt;div&gt;- activeTaskCount: int&lt;/div&gt;" vertex="1">
+    <mxCell id="CUM13pbQA_io14IsIX33-7" parent="CUM13pbQA_io14IsIX33-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- podId: UUID&lt;div&gt;- podName: String&lt;/div&gt;&lt;div&gt;- maxCapacity: int&lt;/div&gt;&lt;div&gt;- activeTaskCount: int&lt;/div&gt;&lt;div&gt;- editorCount: int&lt;/div&gt;" vertex="1">
       <mxGeometry height="74" width="250" y="26" as="geometry" />
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-8" parent="CUM13pbQA_io14IsIX33-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-      <mxGeometry height="8" width="250" y="100" as="geometry" />
+      <mxGeometry height="20" width="250" y="100" as="geometry" />
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-9" parent="CUM13pbQA_io14IsIX33-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ assignEditor(user: User): boolean&lt;div&gt;+ incrementTaskCount(): void&lt;/div&gt;&lt;div&gt;+ isAtMaximumCapacity(): boolean&lt;/div&gt;" vertex="1">
-      <mxGeometry height="80" width="250" y="108" as="geometry" />
+      <mxGeometry height="80" width="250" y="120" as="geometry" />
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value=" VideoTask " vertex="1">
       <mxGeometry height="188" width="250" x="850" y="160" as="geometry">
         <mxRectangle height="30" width="120" x="840" y="160" as="alternateBounds" />
       </mxGeometry>
     </mxCell>
-    <mxCell id="CUM13pbQA_io14IsIX33-11" parent="CUM13pbQA_io14IsIX33-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- taskId: UUID&lt;div&gt;- title: String&lt;/div&gt;&lt;div&gt;- status: String&lt;/div&gt;&lt;div&gt;- fileSize: int&lt;/div&gt;&lt;div&gt;- duration: float&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+    <mxCell id="CUM13pbQA_io14IsIX33-11" parent="CUM13pbQA_io14IsIX33-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- taskId: UUID&lt;div&gt;- title: String&lt;/div&gt;&lt;div&gt;- status: String&lt;/div&gt;&lt;div&gt;- fileSize: float&lt;/div&gt;&lt;div&gt;- duration: float&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
       <mxGeometry height="74" width="250" y="26" as="geometry" />
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-12" parent="CUM13pbQA_io14IsIX33-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
@@ -57,12 +57,6 @@
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-17" parent="CUM13pbQA_io14IsIX33-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ login(): boolean&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ logout(): void&lt;/div&gt;" vertex="1">
       <mxGeometry height="62" width="250" y="108" as="geometry" />
-    </mxCell>
-    <mxCell id="CUM13pbQA_io14IsIX33-18" edge="1" parent="1" source="CUM13pbQA_io14IsIX33-4" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1;exitY=-0.031;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.965;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-7" value="">
-      <mxGeometry relative="1" width="160" as="geometry">
-        <mxPoint x="330" y="240" as="sourcePoint" />
-        <mxPoint x="440" y="240" as="targetPoint" />
-      </mxGeometry>
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-21" edge="1" parent="1" source="CUM13pbQA_io14IsIX33-13" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.996;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;" target="CUM13pbQA_io14IsIX33-9" value="">
       <mxGeometry relative="1" x="-0.7328" y="-11" as="geometry">
@@ -169,6 +163,12 @@
     </mxCell>
     <mxCell id="CUM13pbQA_io14IsIX33-48" parent="CUM13pbQA_io14IsIX33-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ uploadVideo(file: File): VideoTask&lt;div&gt;+ cancelTask(taskId: UUID): boolean&lt;/div&gt;&lt;div&gt;+ viewTaskStatus(taskId: UUID): String&lt;/div&gt;" vertex="1">
       <mxGeometry height="72" width="250" y="78" as="geometry" />
+    </mxCell>
+    <mxCell id="KJdSYOux9JOcUkHazmsh-2" edge="1" parent="1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.006;entryY=0.774;entryDx=0;entryDy=0;entryPerimeter=0;" target="CUM13pbQA_io14IsIX33-7" value="">
+      <mxGeometry relative="1" width="160" as="geometry">
+        <mxPoint x="310" y="273" as="sourcePoint" />
+        <mxPoint x="406" y="200" as="targetPoint" />
+      </mxGeometry>
     </mxCell>
   </root>
 </mxGraphModel>
