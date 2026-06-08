@@ -1,4 +1,4 @@
-<mxGraphModel dx="1212" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+<mxGraphModel dx="1585" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
   <root>
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
@@ -20,6 +20,14 @@
     <mxCell id="VOUr5BUvk-ia3My_0skB-16" edge="1" parent="1" source="apiGateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="nodeJsService">
       <mxGeometry relative="1" as="geometry" />
     </mxCell>
+    <mxCell id="Yi7tLRGQlLIlb37I6Zar-1" edge="1" parent="1" source="apiGateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fileStorage">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="450" y="618" />
+          <mxPoint x="530" y="618" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
     <mxCell id="apiGateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;«&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;component&lt;/font&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font size=&quot;3&quot;&gt;API Gateway&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
       <mxGeometry height="100" width="240" x="330" y="315" as="geometry" />
     </mxCell>
@@ -36,7 +44,7 @@
       <mxGeometry relative="1" as="geometry" />
     </mxCell>
     <mxCell id="pythonRouter" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;«component»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Python routing engine&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-      <mxGeometry height="120" width="220" x="540" y="550" as="geometry" />
+      <mxGeometry height="120" width="220" x="550" y="550" as="geometry" />
     </mxCell>
     <mxCell id="dataLayerBg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=light-dark(#000000,#000000);strokeWidth=2;" value="" vertex="1">
       <mxGeometry height="150" width="720" x="80" y="780" as="geometry" />
@@ -45,7 +53,7 @@
       <mxGeometry height="90" width="200" x="240" y="820" as="geometry" />
     </mxCell>
     <mxCell id="fileStorage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;«&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;component&lt;/font&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font size=&quot;3&quot;&gt;File storage (S3/local)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-      <mxGeometry height="90" width="200" x="530" y="820" as="geometry" />
+      <mxGeometry height="90" width="200" x="500" y="820" as="geometry" />
     </mxCell>
     <mxCell id="VOUr5BUvk-ia3My_0skB-1" parent="1" style="text;html=1;align=left;fontSize=12;fontColor=#5a9ccc;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px; color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;«layer»&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font size=&quot;3&quot; style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;Database tier&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
       <mxGeometry height="50" width="100" x="90" y="790" as="geometry" />
@@ -68,10 +76,10 @@
     <mxCell id="VOUr5BUvk-ia3My_0skB-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;S3 SDK&lt;/font&gt;" vertex="1">
       <mxGeometry height="20" width="160" x="600" y="720" as="geometry" />
     </mxCell>
-    <mxCell id="VOUr5BUvk-ia3My_0skB-12" edge="1" parent="1" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.015;entryY=0.574;entryDx=0;entryDy=0;entryPerimeter=0;" target="pythonRouter" value="">
+    <mxCell id="VOUr5BUvk-ia3My_0skB-12" edge="1" parent="1" style="endArrow=open;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.015;entryY=0.574;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
       <mxGeometry relative="1" width="160" as="geometry">
-        <mxPoint x="360" y="620" as="sourcePoint" />
-        <mxPoint x="520" y="620" as="targetPoint" />
+        <mxPoint x="360" y="631.12" as="sourcePoint" />
+        <mxPoint x="553.3000000000002" y="629.9999999999999" as="targetPoint" />
       </mxGeometry>
     </mxCell>
     <mxCell id="VOUr5BUvk-ia3My_0skB-21" connectable="0" parent="VOUr5BUvk-ia3My_0skB-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Job Queue&lt;/font&gt;" vertex="1">
