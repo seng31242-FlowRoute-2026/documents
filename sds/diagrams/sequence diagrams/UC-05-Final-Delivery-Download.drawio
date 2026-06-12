@@ -1,0 +1,250 @@
+<mxfile host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="2091" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C-WENAV0XiIxE-D70WNb-164" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Client" vertex="1">
+          <mxGeometry height="1224" width="35" x="20" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-165" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="React SPA" vertex="1">
+          <mxGeometry height="1224" width="150" x="275" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-166" parent="C-WENAV0XiIxE-D70WNb-165" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="855" width="10" x="70" y="109" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-167" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="API Gateway" vertex="1">
+          <mxGeometry height="1224" width="150" x="551" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-168" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Node.js API" vertex="1">
+          <mxGeometry height="1224" width="150" x="811" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-169" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="MongoDB" vertex="1">
+          <mxGeometry height="1224" width="150" x="1192" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-170" parent="C-WENAV0XiIxE-D70WNb-169" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="34" width="10" x="70" y="319" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-171" parent="C-WENAV0XiIxE-D70WNb-169" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="34" width="10" x="70" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-172" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="S3" vertex="1">
+          <mxGeometry height="1224" width="150" x="1392" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-173" parent="C-WENAV0XiIxE-D70WNb-172" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="34" width="10" x="70" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-174" parent="C-WENAV0XiIxE-D70WNb-172" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry height="34" width="10" x="70" y="846" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-175" parent="1" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30;fillColor=light-dark(#eeeeee,#1f2020);fontColor=light-dark(#333333,#cccccc);" value="alt" vertex="1">
+          <mxGeometry height="736" width="1398" x="84" y="823" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-176" parent="C-WENAV0XiIxE-D70WNb-175" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" value="[Valid Owner]" vertex="1">
+          <mxGeometry height="20" width="1368" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-177" parent="C-WENAV0XiIxE-D70WNb-175" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" value="[Auth Failed (AF1)]" vertex="1">
+          <mxGeometry height="3" width="1398" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-178" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-164" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-166" value="Click download final video">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="229" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-179" parent="C-WENAV0XiIxE-D70WNb-178" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-133" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-180" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-166" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-167" value="GET /api/tasks/{id}/download">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="497" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-181" parent="C-WENAV0XiIxE-D70WNb-180" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="2" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-141.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-182" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-167" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-168" value="Forward download request">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="765" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-183" parent="C-WENAV0XiIxE-D70WNb-182" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="3" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-133.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-184" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-168" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-170" value="Fetch task/verify ownership">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1085" y="749" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-185" parent="C-WENAV0XiIxE-D70WNb-184" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="4" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-194" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-186" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-169" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-168" value="Return ownership status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1088" y="803" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-187" parent="C-WENAV0XiIxE-D70WNb-186" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="5" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="180" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-188" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-168" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-173" value="Request secure presigned URL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1185" y="904" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-189" parent="C-WENAV0XiIxE-D70WNb-188" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="6" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-294" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-190" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-172" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-168" value="Return Presigned URL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1188" y="958" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-191" parent="C-WENAV0XiIxE-D70WNb-190" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="7" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="280" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-192" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-168" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-171" value="Log download event &amp; mark lifecycle closed">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1085" y="1060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-193" parent="C-WENAV0XiIxE-D70WNb-192" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="8" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-194" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-194" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-169" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-168" value="Update confirmed">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1088" y="1114" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-195" parent="C-WENAV0XiIxE-D70WNb-194" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="9" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="180" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-196" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-168" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-167" value="200 OK (Return URL)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="768" y="1168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-197" parent="C-WENAV0XiIxE-D70WNb-196" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="10" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="119.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-198" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-167" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-166" value="Return URL link">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="1222" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-199" parent="C-WENAV0XiIxE-D70WNb-198" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="11" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="127.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-200" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-166" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-174" value="Initiate direct file download">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="917" y="1276" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-201" parent="C-WENAV0XiIxE-D70WNb-200" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="12" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="-562" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-202" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-172" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-166" value="Stream video file">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-203" parent="C-WENAV0XiIxE-D70WNb-202" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="13" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="548" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-204" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-166" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-164" value="Save file">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="1384" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-205" parent="C-WENAV0XiIxE-D70WNb-204" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="14" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="119" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-206" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-168" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-167" value="403 Forbidden">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="768" y="1485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-207" parent="C-WENAV0XiIxE-D70WNb-206" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="15" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="119.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-208" edge="1" parent="1" source="C-WENAV0XiIxE-D70WNb-167" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=12;startSize=8;endSize=8;" target="C-WENAV0XiIxE-D70WNb-165" value="Show Error Notification">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="498" y="1539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-209" parent="C-WENAV0XiIxE-D70WNb-208" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" value="16" vertex="1">
+          <mxGeometry height="14" relative="1" width="14" as="geometry">
+            <mxPoint x="129.5" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-210" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;fontColor=light-dark(#333333,#cccccc);" value="BR-15: Authenticate ownership" vertex="1">
+          <mxGeometry height="48" width="431" x="861" y="667" as="geometry" />
+        </mxCell>
+        <mxCell id="C-WENAV0XiIxE-D70WNb-211" parent="1" style="fillColor=#ffff88;strokeColor=#9E916F;fontColor=light-dark(#333333,#cccccc);" value="BR-16/17: Log timestamp &amp; close lifecycle" vertex="1">
+          <mxGeometry height="48" width="431" x="861" y="978" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
